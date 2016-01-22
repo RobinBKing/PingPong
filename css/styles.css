@@ -10,7 +10,7 @@ body {
 }
 
 .header-img{
-  height: 200px;
+  height: 150px;
   width: auto;
 }
 .display-3{
@@ -18,11 +18,11 @@ body {
 }
 
 .jumbotron {
-  background-color: #f2f2f2;
-  @include border-radius($border-radius-lg);
+  background-color: orange;
+  /*@include border-radius($border-radius-lg);
 
   @include media-breakpoint-up(sm) {
-    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;*/
   }
 }
 
@@ -33,11 +33,16 @@ body {
 .jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
-  @include border-radius(0);
+  /*@include border-radius(0);*/
 }
 
 .ital-header{
 	font-style: italic;
+}
+
+.side-bar{
+  background-color: green;
+  color: white;
 }
 
 #countTo{

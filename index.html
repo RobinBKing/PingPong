@@ -10,7 +10,7 @@
     <title>PingPong</title>
   </head>
   <body>
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-hr">
       <div class="container">
         <div class="pull-right">
           <h1 class="display-3">Ping Pong</h1>
@@ -19,34 +19,45 @@
           <img class="header-img" src="img/catspingpon.gif">
         </div>
       </div>
-  </div>
-
+    </div>
     <div class="container">
-      <!-- <div>
-        <img src="img/catspingpon.gif">
-      </div> -->
-      <h1>Want to play?</h1>
-      <h3>Here how it works:</h3>
-      <ol>
-        <li>Numbers that can be divided by 3 get a 'Ping'</li>
-        <li>Numbers that can be divided 5 get a 'Pong'</li>
-        <li>Numbers that can be divided by 15 get a 'Ping Pong'</li>
-      </ol>
-      <h4>Get it? Let's Play!</h4>
-      <form id="pingPong">
-        <div class="form-group">
-          <label for="countTo">Enter a number to count to.</label>
-          <input id="countTo" type="text">
+      <div class="row">
+        <div class="col-sm-6 side-bar">
+          <h4>About Ping Pong</h4>
+          <h4>Created by:</h4>
+          <h5 class="ital-header">Rob King</h5>
+          <h4>GitHub URL:</h4>
+          <p class="ital-header">https://github.com/RobinBKing/PingPong.git</p>
+          <h4>Description:</h4>
+          <p class="ital-header">This application swaps out various numbers set by the user to a specified word. The project is a study in JavaScript, jQuery and Behavior Driven Development, (BDD).</p>
+          <h4>Technology used:</h4>
+          <p>Application: JavaScript, jQuery, HTML5, CSS3, bootstrap</p>
+          <p>Testing: Mocha, Chai</p>
+          <h4>Leagal:</h4>
+          <p class="ital-header">Copyright (c) 2016 Robin B. King</p>
         </div>
-        <button type="submit" class="btn">Serve!</button>
-      </form>
-
-      <div id="result">
-        <p>Your counting sequence is:
-          <ul class="pingPongList">
-
-          </ul>
-          <!-- <span class="triangleType"></span></p> -->
+        <div class="col-sm-6">
+          <h1 class="display-3 ital-header">Want to play?</h1>
+          <h3>Here how it works:</h3>
+          <ol>
+            <li>Numbers that can be divided by 3 get a 'Ping'</li>
+            <li>Numbers that can be divided 5 get a 'Pong'</li>
+            <li>Numbers that can be divided by 15 get a 'Ping Pong'</li>
+          </ol>
+          <h4>Get it? Let's Play!</h4>
+          <form id="pingPong">
+            <div class="form-group">
+              <label for="countTo">Enter a number to count  up to:</label>
+              <input id="countTo" type="text">
+            </div>
+            <button type="submit" class="btn">Serve!</button>
+          </form>
+          <div id="result">
+            <p>Your counting sequence is: </p>
+              <ul class="pingPongList">
+              </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
