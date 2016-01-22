@@ -34,4 +34,7 @@ describe('pingPong', function() {
       var countArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
       expect(pingPongReplace(countArray)).to.eql([1, 2, "Ping", 4, "Pong", "Ping", 7, 8, "Ping", "Pong", 11, "Ping", 13, 14, "PingPong", 16, 17, "Ping", 19, "Pong", "Ping", 22, 23, "Ping", "Pong", 26, "Ping", 28, 29, "PingPong"]);
   });
+  it("should a PingPong array", function() {
+      expect(makePingPong(30)).to.eql([1, 2, "Ping", 4, "Pong", "Ping", 7, 8, "Ping", "Pong", 11, "Ping", 13, 14, "PingPong", 16, 17, "Ping", 19, "Pong", "Ping", 22, 23, "Ping", "Pong", 26, "Ping", 28, 29, "PingPong"]);
+  });
 });

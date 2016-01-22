@@ -4,7 +4,7 @@ var numberCheck = function(countTo) {
 };
 var numberArray = function(countTo) {
   var countArray = [];
-  for (var i =1; i < (countTo + 1); i++){
+  for (var i = 1; i < (countTo + 1); i++){
     countArray.push(i);
   };
   return countArray;
@@ -28,6 +28,25 @@ var pingPongReplace = function(countArray) {
   }
   return countArray;
 };
+var makePingPong = function(countTo) {
+  var countArray;
+  var pingPongArray;
+  if(numberCheck(countTo)){
+    countArray = numberArray(countTo);
+    pingPongArray = pingPongReplace(countArray);
+  };
+  return pingPongArray;
+};
 //interface
-// $(document).ready(function() {
-// });
+$(document).ready(function() {
+  // $("form#pingPong").submit(function(event) {
+  // $("ul").empty();
+  // var countTo = parseInt($("input#countTo").val());
+  //
+  // var listArray = pingPongReplace(countTo, countBy);
+  // for (var i = 0; i < listArray.length; i++){
+  //   $("ul.pingPongList").append("<li>"+listArray[i]+"</li>");
+  // }
+  // $("#result").show();
+  // event.preventDefault();
+});

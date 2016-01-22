@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <title>PingPong</title>
   </head>
   <body>
+    <div class="container">
+      <div>
+        <img src="img/catspingpon.gif">
+      </div>
+      <h1>Want to play?</h1>
+      <form id="pingPong">
+        <div class="form-group">
+          <label for="countTo">Enter a number to count to.</label>
+          <input id="countTo" type="text">
+        </div>
+        <button type="Play!" class="btn">Count output!</button>
+      </form>
 
+      <div id="result">
+        <ul class="pingPongList">
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
