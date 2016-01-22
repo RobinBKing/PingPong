@@ -12,9 +12,14 @@ var numberArray = function(numberTo) {
 var remainderCheck = function(divTo, divBy) {
   return (divTo % divBy === 0);
 };
-// var numberReplace function(arrayNbr, replaceNbr, replaceString) {
-//   return true;
-// }
+var numberReplace = function(countArray, replaceNbr, replaceString) {
+  for (var i = 0; i < (countArray.length); i++){
+    if(countArray[i] % replaceNbr ===0){
+      countArray[i] = replaceString;
+    }
+  };
+  return countArray;
+};
 
 //interface
 // $(document).ready(function() {
