@@ -10,22 +10,43 @@
     <title>PingPong</title>
   </head>
   <body>
-    <div class="container">
-      <div>
-        <img src="img/catspingpon.gif">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="pull-right">
+          <h1 class="display-3">Ping Pong</h1>
+        </div>
+        <div class="pull-left">
+          <img class="header-img" src="img/catspingpon.gif">
+        </div>
       </div>
+  </div>
+
+    <div class="container">
+      <!-- <div>
+        <img src="img/catspingpon.gif">
+      </div> -->
       <h1>Want to play?</h1>
+      <h3>Here how it works:</h3>
+      <ol>
+        <li>Numbers that can be divided by 3 get a 'Ping'</li>
+        <li>Numbers that can be divided 5 get a 'Pong'</li>
+        <li>Numbers that can be divided by 15 get a 'Ping Pong'</li>
+      </ol>
+      <h4>Get it? Let's Play!</h4>
       <form id="pingPong">
         <div class="form-group">
           <label for="countTo">Enter a number to count to.</label>
           <input id="countTo" type="text">
         </div>
-        <button type="Play!" class="btn">Count output!</button>
+        <button type="submit" class="btn">Serve!</button>
       </form>
 
       <div id="result">
-        <ul class="pingPongList">
-        </ul>
+        <p>Your counting sequence is:
+          <ul class="pingPongList">
+
+          </ul>
+          <!-- <span class="triangleType"></span></p> -->
       </div>
     </div>
   </body>
