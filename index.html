@@ -20,43 +20,57 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 side-bar">
-          <h4>About Ping Pong</h4>
-          <h4>Created by:</h4>
-          <h5 class="ital-header">Rob King</h5>
-          <h4>GitHub URL:</h4>
-          <p class="ital-header">https://github.com/RobinBKing/PingPong.git</p>
-          <h4>Description:</h4>
-          <p class="ital-header">This application swaps out various numbers set by the user to a specified word. The project is a study in JavaScript, jQuery and Behavior Driven Development, (BDD).</p>
-          <h4>Technology used:</h4>
-          <p>Application: JavaScript, jQuery, HTML5, CSS3, bootstrap</p>
-          <p>Testing: Mocha, Chai</p>
-          <h4>Leagal:</h4>
-          <p class="ital-header">Copyright (c) 2016 Robin B. King</p>
-        </div>
-        <div class="col-sm-6">
-          <h1 class="display-3 ital-header">Want to play?</h1>
-          <h3>Here how it works:</h3>
-          <ol>
-            <li>Numbers that can be divided by 3 get a 'Ping'</li>
-            <li>Numbers that can be divided 5 get a 'Pong'</li>
-            <li>Numbers that can be divided by 15 get a 'Ping Pong'</li>
-          </ol>
-          <h4>Get it? Let's Play!</h4>
-          <form id="pingPong">
-            <div class="form-group">
-              <label for="countTo">Enter a number to count  up to:</label>
-              <input id="countTo" type="text">
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+              <li class="sidebar-brand">About Ping Pong</li>
+              <li>Created by:</li>
+              <li class="ital-header">Rob King</li>
+              <li>GitHub URL:</li>
+              <li class="ital-header">https://github.com/RobinBKing/PingPong.git
+              </li>
+              <li>Description:</li>
+              <li>
+                <p class="ital-header">Swaps out numbers to a Ping, Pong or Ping Pong. A study in Behavior Driven Development, (BDD).</p>
+              </li>
+              <li>Technology used:</li>
+              <li>
+                <p>Application: JavaScript, jQuery, HTML5, CSS3, bootstrap</p>
+                <p>Testing: Mocha, Chai</p>
+              </li>
+              <li>Leagal:</li>
+              <li class="ital-header">Copyright (c) 2016 Robin B. King</li>
+          </ul>
+      </div>
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-3 ital-header">Want to play?</h1>
+              <h3>Here how it works:</h3>
+              <ol>
+                <li>Numbers that can be divided by 3 get a 'Ping'</li>
+                <li>Numbers that can be divided 5 get a 'Pong'</li>
+                <li>Numbers that can be divided by 15 get a 'Ping Pong'</li>
+              </ol>
+              <h4>Get it? Let's Play!</h4>
+              <form id="pingPong">
+                <div class="form-group">
+                  <label for="countTo">Enter a number to count  up to:</label>
+                  <input id="countTo" type="text">
+                </div>
+                <button type="submit" class="btn">Serve!</button>
+              </form>
+              <div id="result">
+                <p>Your counting sequence is: </p>
+                  <ul class="pingPongList">
+                  </ul>
+              </div>
             </div>
-            <button type="submit" class="btn">Serve!</button>
-          </form>
-          <div id="result">
-            <p>Your counting sequence is: </p>
-              <ul class="pingPongList">
-              </ul>
-          </div>
+          </div>>
         </div>
       </div>
     </div>
