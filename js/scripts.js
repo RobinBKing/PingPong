@@ -31,14 +31,12 @@ var pingPongReplace = function(countArray) {
   return countArray;
 };
 var makePingPong = function(countTo) {
-  var countArray = numberArray(countTo);
-  var pingPongArray = pingPongReplace(countArray);
-  return pingPongArray;
+  return pingPongReplace(numberArray(countTo));
 };
 //interface
 $(document).ready(function() {
   $("form#pingPong").submit(function(event) {
-  $("ul").empty();
+  $("ul.pingPongList").empty();
   var countTo = parseInt($("input#countTo").val());
   var listArray = makePingPong(countTo);
   if(listArray.length > 0){

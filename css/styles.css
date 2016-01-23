@@ -1,10 +1,7 @@
-#result {
-  display: none;
-}
-
 body {
   padding-bottom: 2rem;
 }
+
 .container {
 	max-width: 1000px;
 }
@@ -17,6 +14,7 @@ body {
   font-family: fantasy;
 }
 
+/*jumbotron*/
 .jumbotron {
   background-color: orange;
   @include border-radius($border-radius-lg);
@@ -40,13 +38,12 @@ body {
 	font-style: italic;
 }
 
-.side-bar{
-  background-color: green;
-  color: white;
-}
-
 #countTo{
   width: 30px;
+}
+
+#result {
+  display: none;
 }
 
 /* Toggle Styles */
@@ -94,7 +91,6 @@ body {
 }
 
 /* Sidebar Styles */
-
 .sidebar-nav {
     position: absolute;
     top: 0;
