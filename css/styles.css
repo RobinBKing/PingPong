@@ -3,7 +3,9 @@ body {
 }
 
 .container {
-	max-width: 1000px;
+    padding-left: 0;
+    /*padding-left: 250px;*/
+    max-width: 1000px;
 }
 
 .header-img{
@@ -17,24 +19,14 @@ body {
 /*jumbotron*/
 .jumbotron {
   background-color: orange;
-  @include border-radius($border-radius-lg);
-
-  @include media-breakpoint-up(sm) {
-    padding: ($jumbotron-padding * 2) $jumbotron-padding;
   }
 }
 
-.jumbotron-hr {
-  border-top-color: darken($jumbotron-bg, 10%);
-}
-
 .jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  @include border-radius(0);
+  padding: 0;
 }
 
-.ital-header{
+.italicHeader{
 	font-style: italic;
 }
 
@@ -46,52 +38,16 @@ body {
   display: none;
 }
 
-/* Toggle Styles */
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: green;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    font-family:fantasy;
-}
-
-#wrapper.toggled #sidebar-wrapper {
+#sidebar {
+    position:absolute;;
+    left: 0px;
     width: 250px;
-}
+    height: 100%;
+    background: green;
+    font-family:fantasy;
+  }
 
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
-/* Sidebar Styles */
-.sidebar-nav {
+.sidebarNav {
     position: absolute;
     top: 0;
     width: 250px;
@@ -100,67 +56,35 @@ body {
     list-style: none;
 }
 
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
+.sidebarNav li {
+  text-indent: 10px;
+  font-family: fantasy;
 }
 
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
+.sidebarHeader {
+  font-size: 25px;
+  font-weight:bolder;
+  line-height: 60px;
 }
 
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+.sidebarTitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
+.sidebarDetail{
+  line-height: 20px;
+  font-size: 15px;
+  font-style: italic;
 }
 
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+.techList{
+  list-style: none;
 }
 
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: 250px;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
+#pageContent {
+    width: 100%;
+    position: absolute;
+    padding-left: 250px;
 }
